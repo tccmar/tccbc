@@ -3,6 +3,9 @@ import 'react-native-gesture-handler';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 import { StyleSheet, Text, View } from 'react-native';
+import axios from "axios";
+import 'react-native-gesture-handler';
+
 import Home from './pages/home/'
 import Login from './pages/login/'
 import SingUp from './pages/singup/';
