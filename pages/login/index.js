@@ -5,7 +5,7 @@ import styles from './style';
 import { useFonts, Poppins_600SemiBold, Poppins_400Regular } from '@expo-google-fonts/poppins';
 
 export default function Login(){
-    const [cpf, setCpf] = useState('');
+    const [email, setEmail] = useState('');
     const [senha, setSenha] = useState('');
 
 
@@ -23,25 +23,21 @@ export default function Login(){
     return(
         <View style={styles.container}>
             <View style={styles.information}>
-                <Text style={styles.titulo}>Preencha as lacunas abaixo com as informações cadastradas pela gestão escolar para acessar sua conta</Text>
+                <Text style={styles.titulo}>Preencha as lacunas abaixo com suas informações para acessar sua conta</Text>
             </View>
             <View style={styles.form}>
                 <View>
-                    <Text style={styles.label}>CPF:</Text>
+                    <Text style={styles.label}>E-Mail:</Text>
                     <TextInput
                         style={styles.input}
-                        placeholder="Digite seu CPF"
-                        placeholderTextColor="#bfbdbd"
-                        onChangeText={setCpf}
-                        value={cpf}
+                        onChangeText={setEmail}
+                        value={email}
                     />
                 </View>
                 <View>
                     <Text style={styles.label}>Senha:</Text>
                     <TextInput
                         style={styles.input}
-                        placeholder="Digite sua Senha"
-                        placeholderTextColor="#bfbdbd"
                         onChangeText={setSenha}
                         value={senha}
                     />
